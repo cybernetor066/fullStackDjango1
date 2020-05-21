@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    {% load static %}
+    <title>RafaelPortal Sign Up</title>
+    <meta charset="UTF-8" />    <!--Character encoding.-->
+    <meta name="viewport" content="width=device-width, initial-scale=0.5"/>
+    <link rel="stylesheet" href="{% static 'therapistApp/styles/style.css'  %}">
+    <link rel="stylesheet" href="{% static 'therapistApp//tiny-slider-master/src/tiny-slider.css'  %}">
+</head>
+
+<body class="body-signup">
+    {% comment %} <div id="time-date" class="">
+        {% load static %}
+        <span id="Day"></span>&nbsp;<span id="Month"></span>&nbsp;<span id="date"></span>&nbsp;<span id="Year"></span>&nbsp;(<span id="Hour"></span>:<span id="Min"></span>&nbsp;<span id="AM-PM"></span>)
+        <script type="text/javascript" src="{% static 'therapistApp/jSFiles/live-clock.js' %}"></script>
+    </div> {% endcomment %}
+    
+    <div class="container-signup">
+        <div class="container-signup-content container-signup-content1">
+            <b>Website Logo</b>
+        </div>
+        <div class="container-signup-content container-signup-content2">
+            <form action="" method="POST" enctype="multipart/form-data">
+            <span class="signup-intro1">
+                <b>Create your account</b>
+            </span>
+            <br><br>
+
+            <span class="signup-intro2">
+            Sign up to join over 1 million people <br>
+            who already feel happier.
+            </span>
+            <br><br>
+
+            <span class="signup-intro3">
+                Email <br>
+            </span>
+            <input id="signup_email" type="email" name="signup_email" placeholder=" Enter email address" required>
+            <br><br>
+
+            <span class="signup-intro4">
+                Password <br>
+            </span>
+            <input id="signup_password" type="text" name="signup_password" placeholder=" Enter password" required>
+            <br><br>
+
+            <span class="signup-intro5">
+                Nickname
+            </span>
+            <br>
+            <input id="signup_nickname" type="text" name="signup_nickname" placeholder=" Enter nickname" required>
+            <br><br>
+
+            <input id="signup_checkbox" type="checkbox" name="signup_checkbox" required>
+            <span class="signup-intro6">
+                I am over 13years and agree to the<br><b><a id="terms_of_use" href="">Terms of Use</a></b> and
+                <b><a id="privacy_policy" href="">Privacy Policy</a></b>
+            </span>
+            <br><br>
+
+            <span class="signup-intro7">
+            </span><br>
+            <input id="sign_up" type="submit" name="sign_up" value="Sign up" required>
+            <br>
+            <br>
+
+
+            <span class="signup-intro8">
+            Already have an account?
+                <b><a id="have_account" href="">Sign in</a></b>
+            </span>
+            <br>
+
+            </form>
+        </div>
+        {% comment %} <div class="container-signup-content container-signup-content3">
+            Welcome to the signup page
+        </div>
+        <div class="container-signup-content container-signup-content4">
+            Welcome to the signup page
+        </div>
+        <div class="container-signup-content container-signup-content5">
+            Welcome to the signup page
+        </div>
+        <div class="container-signup-content container-signup-content6">
+            Welcome to the signup page
+        </div>
+        <div class="container-signup-content container-signup-content7">
+            Welcome to the signup page
+        </div>
+        <div class="container-signup-content container-signup-content8">
+            Welcome to the signup page
+        </div>
+        <div class="container-signup-content container-signup-content9">
+            Welcome to the signup page
+        </div>         {% endcomment %}
+    </div>
+
+</body>
+</html>

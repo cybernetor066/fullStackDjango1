@@ -1,0 +1,231 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    {% load static %}
+    <title>{% block title %}Rafael Therapy Portal{% endblock %}</title>
+    <meta charset="UTF-8" />    <!--Character encoding.-->
+    <meta name="viewport" content="width=device-width, initial-scale=0.5"/>
+    <link rel="stylesheet" href="{% static 'therapistApp/styles/style.css'  %}">
+    <link rel="stylesheet" href="{% static 'therapistApp//tiny-slider-master/src/tiny-slider.css'  %}">
+</head>
+
+<body>
+    <div id="time-date" class="">
+    {% comment %} Insert our time {% endcomment %}
+        {% load static %}
+        <div class="time-borders grid_12">
+            <span id="Day"></span>&nbsp;<span id="Month"></span>&nbsp;<span id="date"></span>&nbsp;<span id="Year"></span>&nbsp;(<span id="Hour"></span>:<span id="Min"></span>&nbsp;<span id="AM-PM"></span>)
+        </div>
+        <script type="text/javascript" src="{% static 'therapistApp/jSFiles/live-clock.js' %}"></script>
+    </div>
+    
+    <div class="overallContainer">
+        {% comment %} <div id="sidebar">
+            {% block sidebar %}
+                <p>{{greeting}}</p>
+            {% endblock %}
+        </div> {% endcomment %}
+    
+        {% comment %} <div>
+            {% load static %}
+            <img src="{% static "therapistApp/images/backgroundImage1.jpg" %}" alt="Backgound Image">
+        </div> {% endcomment %}
+
+        {% comment %} <div id="content" >
+            {% block content %}{% endblock %}
+        </div> {% endcomment %}
+
+        <div class="container1" >
+            {% block displayImage %}
+            <div id="myHeader" class="header">  
+                    {% load static %}
+                    <script type="text/javascript" src="{% static 'therapistApp/jSFiles/sticky1.js' %}"></script>
+                
+                <div class="header-logo">
+                    {% block logo %}
+                    <span>Company Logo</span>
+                    {% endblock %}
+                </div>
+
+                <div class="header-nav">
+                    {% block navbars %}
+                    <nav>
+                        <a href="">ABOUT</a>
+                        <a href="">ADVICE</a>
+                        <a href="">FAQ</a>
+                        <a href="">REVIEWS</a>
+                        <a href="">CONTACT</a>
+                        <a id="login" href="/login"><b>LOG IN</b></a>
+                        <a id="get-started" href="/signup"><b>SIGN UP</b></a>
+                    </nav>
+                    {% endblock %}
+                </div>                
+            </div>
+
+            {% comment %} <div class="container2" >
+                <div class="container2-"></div>
+                <div class="container2-"></div>
+                <div class="container2-"></div>
+            </div>  {% endcomment %}
+
+        </div> 
+
+        {% block content %}        
+        {% block container2 %}
+        <div class="container2">
+            <div class="container2-content1 container2-content1-1"> JOIN 1 MILLION RAFAEL USERS </div>
+            <div class="container2-content1"> <h1>Feeling better</h1> </div>
+            <div class="container2-content1"> <h1>starts with a </h1> </div>
+            <div class="container2-content1"> <h1>single hello</h1> </div>
+            <div class="container2-content1 container2-content1-5"> <a href=""><b>Get started</b></a> </div>
+            {% comment %} <div class="container1-content2"></div>
+            <div class="container1-content3"></div> {% endcomment %}
+        </div> 
+        {% endblock %}
+
+
+        {% block container3 %}
+        <div class="container3">
+            <div class="container3-content1 container3-content1-1"> 
+                <h1>Meet Professional, licensed, verified and vetted counselors that you can trust</h1> 
+            </div>
+            <div class="container3-content1 container3-content1-2">
+                Connect with the world's largest network of licensed, accredited, 
+                and experienced counselors who can help you with a range of issues including depression, anxiety, relationships, 
+                trauma, grief, and more. With our counselors, you get the same professionalism and quality you would expect from 
+                an in-office counselor, but with the ability to communicate when and how you want. 
+             </div>
+            <div class="container3-content1 container3-content1-3"> <a href=""><b>Get matched to a therapist</b></a> </div>
+            {% comment %} <div class="container1-content2"></div>
+            <div class="container1-content3"></div> {% endcomment %}
+        </div> 
+        {% endblock %}
+
+        {% block container4 %}
+        <div class="container4">
+            <div class="container4-content1 container4-content1-1"> 
+                <h1>Message your therapist anytime from anywhere</h1> 
+            </div>
+            <div class="container4-content1 container4-content1-2">
+                <div class="container4-content1-content1 container4-content1-content1-1">
+                    No scheduling needed <br /> 
+                    message your therapist anytime <br />
+                    and from anywhere you want.
+                </div>
+                <div class="container4-content1-content1 container4-content1-content1-2">
+                    &
+                </div>             
+                <div class="container4-content1-content1 container4-content1-content1-3">
+                    Schedule a live session <br />
+                    at a time that's convenient for you. <br />
+                    Connect from your phone, tablet, or computer.
+                </div>
+            </div>
+            {% comment %} <div class="container1-content2"></div>
+            <div class="container1-content3"></div> {% endcomment %}
+        </div> 
+        {% endblock %}
+
+        {% block container5 %}
+            {% load static %}
+            <script type="text/javascript" src="{% static 'therapistApp/jSFiles/autoManualSlidesb1.js' %}"></script>
+        {% comment %} <div class="my-slider"> {% endcomment %}
+        <div class="container5">
+            <div class="container5-content1 container5-content1-1"> 
+                <span class="quotes">&#8220;</span> Susan is amazing in her insights and conversational approach <span class="quotes">&#8221;</span> <br />
+                I am so glad and blessed to have found her and started healing <br />
+                with her guidance.
+            </div>
+            <div class="container5-content1 container5-content1-2">
+                <div class="container5-content1-content1 container5-content1-content1-1">
+                </div>             
+                <div class="container5-content1-content1 container5-content1-content1-2">          
+                    Schedule a live session <br />
+                    Written by S.A.For Susan Hargett. <br />
+                    (LPC, NCC, YACEP).
+                </div>
+            </div>
+        </div>
+        {% comment %} <div class="container5">
+            <div class="container5-content1 container5-content1-1"> 
+                <span class="quotes">&#8220;</span> Susan is amazing in her insights and conversational approach <span class="quotes">&#8221;</span> <br />
+                I am so glad and blessed to have found her and started healing <br />
+                with her guidance.
+            </div>
+            <div class="container5-content1 container5-content1-2">
+                <div class="container5-content1-content1 container5-content1-content1-1">
+                </div>             
+                <div class="container5-content1-content1 container5-content1-content1-2">          
+                    Schedule a live session <br />
+                    Written by S.A.For Susan Hargett. <br />
+                    (LPC, NCC, YACEP).
+                </div>
+            </div>
+        </div>
+        <div class="container5">
+            <div class="container5-content1 container5-content1-1"> 
+                <span class="quotes">&#8220;</span> Susan is amazing in her insights and conversational approach <span class="quotes">&#8221;</span> <br />
+                I am so glad and blessed to have found her and started healing <br />
+                with her guidance.
+            </div>
+            <div class="container5-content1 container5-content1-2">
+                <div class="container5-content1-content1 container5-content1-content1-1">
+                </div>             
+                <div class="container5-content1-content1 container5-content1-content1-2">          
+                    Schedule a live session <br />
+                    Written by S.A.For Susan Hargett. <br />
+                    (LPC, NCC, YACEP).
+                </div>
+            </div>
+        </div>                  {% endcomment %}
+        {% comment %} </div> {% endcomment %}
+        {% endblock %}
+
+        {% block container6 %}
+        <div class="container6">
+            <div class="container6-content1 container6-content1-1"> 
+                If you are in a crisis or any other person may be 
+                in danger - don't use this site. These <a href=""><b>resources</b></a> can provide you with immediate help.
+            </div>
+            {% comment %} <div class="container1-content2"></div>
+            <div class="container1-content3"></div> {% endcomment %}
+        </div> 
+        {% endblock %}
+
+        {% endblock %}
+
+        {% block footer %}
+        <div class="container7">
+            {% comment %} <footer> {% endcomment %}
+                <div class="container7-content1 container7-content1-1">
+                    <div class="container7-content1-content1 container7-content1-content1-1">
+                        <a href="">ABOUT</a>
+                        <a href="">ADVICE</a>
+                        <a href="">FAQ</a>
+                        <a href="">REVIEWS</a>
+                        <a href="">CONTACT</a>
+                    </div> 
+                    <div class="container7-content1-content1 container7-content1-content1-2">
+                        <a href="">Terms & conditions</a> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                        <a href="">Privacy Policy</a> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                        &copy;2020 Rafaeltherapy
+                    </div>
+                </div>
+                <div class="container7-content1 container7-content1-2"> 
+                    Yahoo Bing Facebook WhatsApp Insta Twitter 
+                </div>
+            {% comment %} </footer> {% endcomment %}
+            {% comment %} <div class="container1-content2"></div>
+            <div class="container1-content3"></div> {% endcomment %}
+        </div> 
+        {% endblock %}
+
+
+        {% comment %} <div id="content" >
+            {% block content2 %}{% endblock %}
+        </div>  {% endcomment %}
+        {% endblock %}
+    </div>
+
+</body>
+</html>

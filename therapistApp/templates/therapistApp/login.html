@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    {% load static %}
+    <title>RafaelPortal Login</title>
+    <meta charset="UTF-8" />    <!--Character encoding.-->
+    <meta name="viewport" content="width=device-width, initial-scale=0.5"/>
+    <link rel="stylesheet" href="{% static 'therapistApp/styles/style.css'  %}">
+    <link rel="stylesheet" href="{% static 'therapistApp//tiny-slider-master/src/tiny-slider.css'  %}">
+</head>
+
+<body class="body-login">
+    {% comment %} <div id="time-date" class="">
+        {% load static %}
+        <span id="Day"></span>&nbsp;<span id="Month"></span>&nbsp;<span id="date"></span>&nbsp;<span id="Year"></span>&nbsp;(<span id="Hour"></span>:<span id="Min"></span>&nbsp;<span id="AM-PM"></span>)
+        <script type="text/javascript" src="{% static 'therapistApp/jSFiles/live-clock.js' %}"></script>
+    </div> {% endcomment %}
+    
+    <div class="container-login">
+        <div class="container-login-content container-login-content1">
+            <b>Website Logo</b>
+        </div>
+        <div class="container-login-content container-login-content2">
+            <form action="" method="POST" enctype="multipart/form-data">
+            <span class="login-intro1">
+                <b>Sign in to your account</b>
+            </span>
+            <br><br>
+
+            <span class="login-intro2">
+            Sign in to continue your therapy journey <br>
+            towards a happier, healthier you.
+            </span>
+            <br><br>
+
+            <span class="login-intro3">
+                Email <br>
+            </span>
+            <input id="login_email" type="email" name="login_email" placeholder=" Enter email address" required>
+            <br><br>
+
+            <span class="login-intro4">
+                Password <br>
+            </span>
+            <input id="login_password" type="text" name="login_password" placeholder=" Enter password" required>
+            <br>
+
+            <span class="login-intro5">
+                <b><a id="forgot_password" href="">Forgot password?</a></b>
+            </span>
+            <br><br>
+
+            <span class="login-intro6">
+            </span><br>
+            <input id="sign_in" type="submit" name="sign_in" value="Sign in" required>
+            <br>
+            <br>
+
+
+            <span class="login-intro7">
+            Dont have an account?
+                <b><a id="dont_haveAccount" href="/signup">Sign up</a></b>
+            </span>
+            <br>
+
+            </form>
+        </div>
+        {% comment %} <div class="container-login-content container-login-content3">
+            Welcome to the login page
+        </div>
+        <div class="container-login-content container-login-content4">
+            Welcome to the login page
+        </div>
+        <div class="container-login-content container-login-content5">
+            Welcome to the login page
+        </div>
+        <div class="container-login-content container-login-content6">
+            Welcome to the login page
+        </div>
+        <div class="container-login-content container-login-content7">
+            Welcome to the login page
+        </div>
+        <div class="container-login-content container-login-content8">
+            Welcome to the login page
+        </div>
+        <div class="container-login-content container-login-content9">
+            Welcome to the login page
+        </div>         {% endcomment %}
+    </div>
+
+</body>
+</html>
