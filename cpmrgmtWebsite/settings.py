@@ -113,7 +113,7 @@ DATABASES = {
         # '/home/cybernetor066/Desktop/Software-IT-Web-Dev/GIT-Repos/FreelanceProjects/cpmrgmtFullStackDjango/p' is too long")
         # use just a name as value for the NAME key when using mysql database and not a path(MySQL is not a file based system)
         'NAME': 'therapistapp_data',
-        'USER': '%s' % os.environ['USERNAME'],
+        'USER': '%s' % os.environ['USER_NAME'],
         'PASSWORD': '%s' % os.environ['PASSWORD'],
         'HOST': '%s' % os.environ['HOST'],
         'PORT': '3306',
