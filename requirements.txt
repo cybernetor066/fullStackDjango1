@@ -14,7 +14,7 @@ deathbycaptcha==0.1.1
 decorator==4.4.2
 defusedxml==0.6.0
 df2gspread==1.0.4
-Django==2.2.12
+Django==2.2.21
 entrypoints==0.3
 folium==0.10.1
 google-api-python-client==1.6.7
